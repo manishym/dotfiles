@@ -1,0 +1,5 @@
+vendor/**
+.env/**
+.venv/**
+.coverage
+.venv

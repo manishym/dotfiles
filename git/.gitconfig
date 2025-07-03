@@ -1,0 +1,8 @@
+[diff]
+	tool = nvim -d
+[user]
+	name = Manish
+	email = myathnal@redhat.com
+[core]
+	editor = nvim
+	excludesFile = ~/.gitignore
