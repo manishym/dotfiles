@@ -73,13 +73,10 @@ ZSH_CUSTOM=${ZSH_CUSTOM:-~/.oh-my-zsh/custom}
 echo "Installing Zsh plugins..."
 git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions "$ZSH_CUSTOM/plugins/zsh-autosuggestions" || true
 git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting" || true
+git clone https://github.com/romkatv/zsh-defer.git "$ZSH_CUSTOM/plugins/zsh-defer" || true
 
-# Tmux Plugin Manager (TPM)
-echo "Installing tmux plugin manager..."
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm || true
+echo "Installing Powerlevel10k theme..."
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "$ZSH_CUSTOM/themes/powerlevel10k" || true
 
-# Install tmux plugins
-~/.tmux/plugins/tpm/bin/install_plugins
-
-# Done
 echo "Dotfiles setup complete!"
+
