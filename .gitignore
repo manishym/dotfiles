@@ -1,0 +1,40 @@
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Zsh & terminal history
+.zsh_history
+.zsh_sessions
+
+# SSH, AWS, GCP credentials and other secrets
+*.pem
+*.key
+*.crt
+.kube/
+.aws/
+.gcp/
+kubeconfig
+secrets.env
+.env
+
+# Editor swap/backup files
+*~
+*.swp
+*.swo
+
+# Node and Python junk (if any dev work ends up here)
+node_modules/
+__pycache__/
+
+# Personal files
+*.log
+*.bak
+
+# Prevent local-only overrides from being tracked
+.local
+*.local
+
+# JetBrains and VSCode metadata
+.idea/
+.vscode/
+
