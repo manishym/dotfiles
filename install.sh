@@ -44,7 +44,7 @@ fi
 # Set Zsh as default shell
 if [ "$SHELL" != "$(which zsh)" ]; then
     echo "Setting Zsh as default shell..."
-    chsh -s $(which zsh)
+    sudo chsh -s $(which zsh) $USER
 fi
 
 # Install Oh My Tmux
